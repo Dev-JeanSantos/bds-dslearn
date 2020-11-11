@@ -12,6 +12,16 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Trilha JAVA REACT',
 INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Trilha HTML', 'https://cdn.pixabay.com/photo/2018/03/22/10/55/training-course-3250007_960_720.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVh2uM-DebaaY88YfkDGLpfhiKi054rCO2GQ&usqp=CAU');
 INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Trilha CSS', 'https://cdn.pixabay.com/photo/2018/03/22/10/55/training-course-3250007_960_720.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVh2uM-DebaaY88YfkDGLpfhiKi054rCO2GQ&usqp=CAU');
 
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('edição 1', TIMESTAMP WITH TIME ZONE '2021-01-01T16:00:00Z',TIMESTAMP WITH TIME ZONE '2022-01-01T16:00:00Z', 1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('edição 2', TIMESTAMP WITH TIME ZONE '2021-01-01T16:00:00Z',TIMESTAMP WITH TIME ZONE '2022-01-01T16:00:00Z', 2);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('edição 3', TIMESTAMP WITH TIME ZONE '2021-01-01T16:00:00Z',TIMESTAMP WITH TIME ZONE '2022-01-01T16:00:00Z', 3);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('edição 4', TIMESTAMP WITH TIME ZONE '2021-01-01T16:00:00Z',TIMESTAMP WITH TIME ZONE '2022-01-01T16:00:00Z', 1);
+
+INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Trilha HTML', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Perguntas e Respostas', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Forum', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Lives de carreira', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
+
 
 
 INSERT INTO tb_role (authority) VALUES ('ROLE_STUDENT');
