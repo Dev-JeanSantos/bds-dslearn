@@ -27,6 +27,9 @@ INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prer
 INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prerequisite_Id) VALUES ('Capitulo 3', 'Aplicaremos todo contéudo da section 3',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 1);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prerequisite_Id) VALUES ('Capitulo 4', 'Aplicaremos todo contéudo da section 4',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 1);
 
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1,TIMESTAMP WITH TIME ZONE '2021-11-20T16:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1,TIMESTAMP WITH TIME ZONE '2021-11-20T16:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (3, 1,TIMESTAMP WITH TIME ZONE '2021-11-20T16:00:00Z', null, true, false);
 
 INSERT INTO tb_role (authority) VALUES ('ROLE_STUDENT');
 INSERT INTO tb_role (authority) VALUES ('ROLE_INSTRUCTOR');
