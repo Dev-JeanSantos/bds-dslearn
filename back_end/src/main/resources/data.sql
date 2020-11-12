@@ -31,6 +31,24 @@ INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, avai
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1,TIMESTAMP WITH TIME ZONE '2021-11-20T16:00:00Z', null, true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (3, 1,TIMESTAMP WITH TIME ZONE '2021-11-20T16:00:00Z', null, true, false);
 
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('AULA 1', 1, 1);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('AULA 2', 2, 1);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('AULA 1', 1, 2);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('AULA 2', 2, 2);
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('AULA 3: Tarefa Capitulo 1', 3, 1);
+
+INSERT INTO tb_content (content, video_Uri, id) VALUES ('Material de Apoio 1','https://www.youtube.com/watch?v=WpA2NXdfkNQ', 1);
+INSERT INTO tb_content (content, video_Uri, id) VALUES ('Material de Apoio 2','https://www.youtube.com/watch?v=WpA2NXdfkNQ', 2);
+INSERT INTO tb_content (content, video_Uri, id) VALUES ('Material de Apoio 3','https://www.youtube.com/watch?v=WpA2NXdfkNQ', 3);
+INSERT INTO tb_content (content, video_Uri, id) VALUES ('Material de Apoio 4','https://www.youtube.com/watch?v=WpA2NXdfkNQ', 4);
+INSERT INTO tb_task (description, question_Count, approval_Count, weight, due_Date, id ) VALUES ('Fazer um trabalho', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2021-11-20T16:00:00Z', 5 );
+
+INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
+INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (3, 1, 1);
+
+
+
 INSERT INTO tb_role (authority) VALUES ('ROLE_STUDENT');
 INSERT INTO tb_role (authority) VALUES ('ROLE_INSTRUCTOR');
 INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
