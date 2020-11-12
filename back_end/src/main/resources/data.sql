@@ -18,10 +18,14 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('edi
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('edição 4', TIMESTAMP WITH TIME ZONE '2021-01-01T16:00:00Z',TIMESTAMP WITH TIME ZONE '2022-01-01T16:00:00Z', 1);
 
 INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Trilha HTML', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
-INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Perguntas e Respostas', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
-INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Forum', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
-INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Lives de carreira', 'Trilha Principal do HTML do Curso',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Perguntas e Respostas', 'Tire suas dúvidas',2,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 2', 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Forum', 'Todas as respostas, em um só lugar',3,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 1', 2);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, external_Link, offer_id) VALUES ('Lives de carreira', 'Lives Exclusivas com cpnvidados especiais',4,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1,'Link 2', 2);
 
+INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prerequisite_Id) VALUES ('Capitulo 1', 'Aplicaremos todo contéudo da section 1',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prerequisite_Id) VALUES ('Capitulo 2', 'Aplicaremos todo contéudo da section 2',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prerequisite_Id) VALUES ('Capitulo 3', 'Aplicaremos todo contéudo da section 3',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prerequisite_Id) VALUES ('Capitulo 4', 'Aplicaremos todo contéudo da section 4',1,'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 1);
 
 
 INSERT INTO tb_role (authority) VALUES ('ROLE_STUDENT');
