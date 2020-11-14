@@ -1,14 +1,19 @@
 package com.fourtk.dslearn.services;
 
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.fourtk.dslearn.dto.UserDTO;
 import com.fourtk.dslearn.entities.User;
 import com.fourtk.dslearn.repositories.UserRepository;
+import com.fourtk.dslearn.services.exceptions.ResourcesNotFoundException;
 
 
 @Service
@@ -18,6 +23,15 @@ public class UserService implements UserDetailsService {
 
 	@Autowired 
 	private UserRepository repository;
+	
+	@Transactional(readOnly = true)
+	public UserDTO findById(Long id) {
+		
+		Optional<User> obj = repository.findById(id);
+		User entity = obj.orElseThrow(() -> new ResourcesNotFoundException("Entidade não Encontrada"));
+		
+		return new UserDTO(entity);	
+	}
 	
 	/*
 	@Autowired
@@ -35,16 +49,7 @@ public class UserService implements UserDetailsService {
 		return  list.map(x -> new UserDTO(x));	
 	}
 	
-	@Transactional(readOnly = true)
-	public UserDTO findById(Long id) {
-		
-		Optional<User> obj = repository.findById(id);
-		User entity = obj.orElseThrow(() -> new ResourcesNotFoundException("Categoria não Encontrada"));
-		
-		return new UserDTO(entity);
-		
 	
-	}
 	
 	@Transactional
 	public UserDTO insert(UserInsertDTO dto) {
