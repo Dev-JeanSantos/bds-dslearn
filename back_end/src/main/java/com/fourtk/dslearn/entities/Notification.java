@@ -19,7 +19,8 @@ public class Notification implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)private Long id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String text;
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE" )
 	private Instant moment;

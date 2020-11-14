@@ -39,12 +39,17 @@ public class User implements Serializable{
 	@OneToMany(mappedBy = "user")
 	private List<Notification> notifications = new ArrayList<>();
 	
+	@OneToMany(mappedBy = "author")
+	private List<Topic> topics = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "author")
+	private List<Reply> replys = new ArrayList<>();
+	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public User(Long id, String name, String email, String password, Set<Role> roles) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -90,6 +95,14 @@ public class User implements Serializable{
 
 	public List<Notification> getNotifications() {
 		return notifications;
+	}
+
+	public List<Topic> getTopics() {
+		return topics;
+	}
+	
+	public List<Reply> getReplys() {
+		return replys;
 	}
 
 	@Override
