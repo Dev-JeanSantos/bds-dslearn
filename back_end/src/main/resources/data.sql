@@ -2,14 +2,14 @@ INSERT INTO tb_user (name, email, password) VALUES ('Alex Brown', 'alex@gmail.co
 INSERT INTO tb_user (name, email, password) VALUES ('Maria Green', 'maria@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 INSERT INTO tb_user (name, email, password) VALUES ('Jean Santos', 'jean@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 1', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', true, 'route Manesagem 1', 1);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 1', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', false, 'route Manesagem 1', 2);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 2', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', true, 'route Manesagem 1', 1);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 2', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', false, 'route Manesagem 1', 2);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 2', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', false, 'route Manesagem 1', 3);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', TIMESTAMP WITH TIME ZONE '2020-12-10T13:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Segundo feedback: favor revisar', TIMESTAMP WITH TIME ZONE '2020-12-12T13:00:00Z', true, '/offers/1/resource/1/sections/1', 2);
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Terceiro feedback: favor revisar', TIMESTAMP WITH TIME ZONE '2020-12-14T13:00:00Z', false, '/offers/1/resource/1/sections/1', 3);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 1', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', true, '/offers/1/resources/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 1', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', false, '/offers/1/resources/1/sections/1', 2);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 2', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', true, '/offers/1/resources/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 2', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', false, '/offers/1/resources/1/sections/1', 2);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Mensagem 2', TIMESTAMP WITH TIME ZONE '2020-11-11T16:00:00Z', false, '/offers/1/resources/1/sections/1', 3);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Primeiro feedback de tarefa: favor revisar', TIMESTAMP WITH TIME ZONE '2020-12-10T13:00:00Z', false, '/offers/1/resources/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Segundo feedback: favor revisar', TIMESTAMP WITH TIME ZONE '2020-12-12T13:00:00Z', true, '/offers/1/resources/1/sections/1', 2);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Terceiro feedback: favor revisar', TIMESTAMP WITH TIME ZONE '2020-12-14T13:00:00Z', false, '/offers/1/resources/1/sections/1', 3);
 
 
 
